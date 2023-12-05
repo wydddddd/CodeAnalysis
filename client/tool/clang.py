@@ -8,7 +8,6 @@
 """
 clang 扫描任务
 """
-
 import os
 import shlex
 
@@ -21,8 +20,6 @@ from util.errcode import E_NODE_TASK_CONFIG
 from util.exceptions import TaskError, CompileTaskError
 from util.logutil import LogPrinter
 from util.subprocc import SubProcController
-import os
-import shlex
 
 
 class Clang(CodeLintModel):
