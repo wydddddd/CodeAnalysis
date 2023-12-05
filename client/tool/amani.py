@@ -15,7 +15,6 @@ from task.codelintmodel import CodeLintModel
 from util.subprocc import SubProcController
 from node.app import settings
 
-
 class Amani(CodeLintModel):
     def __init__(self, params):
         CodeLintModel.__init__(self, params)
