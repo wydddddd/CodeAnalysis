@@ -98,7 +98,7 @@ class Cobra(CodeLintModel):
             LogPrinter.error(f"分析结果不存在，请确认cobra是否安装成功:\n{self.install_steps}")
             return []
         with open(error_output, "r") as f:
-            raw_warning_json = json.loads(f.read())
+            raw_warning_json = json.load(f)
         issues = []
         column = 0
         for (_, value) in raw_warning_json.items():
